@@ -1,0 +1,53 @@
+.nav {
+    width: 100%;
+    position: fixed;
+    top: 2.7em;
+    right: 0;
+    left: 0;
+    height: 3em;
+
+    padding: 0em 6.25em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+
+
+}
+
+.nav img {
+    width: 14.56em;
+}
+
+.nav ul a {
+    font-size: 1.25em;
+    font-weight: 400;
+    text-decoration: none;
+    margin-right: 3em;
+    color: black;
+}
+
+.nav button {
+    width: 10.6em;
+    height: 100%;
+    background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+    border-radius: 10px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.nav button:hover {
+    outline: none;
+    border: none;
+}
+
+.nav button {
+    color: white;
+    font-weight: 400;
+}
+
+nav ul .active {
+    color: #A02279;
+
+}

@@ -1,0 +1,15 @@
+.card {
+    width: 12em;
+    height: 23.25em;
+}
+
+.card img {
+    width: 16.25em;
+    height: 16.56em;
+}
+
+.card .card-info {
+    display: flex;
+    flex-direction: column;
+}
+

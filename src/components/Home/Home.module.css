@@ -1,0 +1,115 @@
+.home {}
+
+.home .first-section {
+    
+    margin: 0em 7.437em 4.18em 6.25em;
+    height: 28.688em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.home footer {
+    display: flex;
+    background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0em 6.25em;
+    height: 4.375em;
+}
+
+
+.text-section {
+    width: 40em;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.text-section h1 {
+    font-weight: 400;
+    font-size: 3.5em;
+    margin: 0;
+}
+
+.text-section p {
+    font-size: 1.5em;
+    line-height: 1.28em;
+    margin: 0;
+}
+
+.highlight {
+    color: #A02279;
+    font-weight: 700;
+}
+
+.input-field {
+    width: fit-content;
+    height: 3.3753em;
+}
+
+.input-field>* {
+    height: 100%;
+}
+
+.input-field input {
+    width: 24.37em;
+    padding: 1.25em 1em;
+    border: 1px solid #A3A3A3;
+    border-radius: 8px 0px 0px 8px;
+
+}
+
+.input-field button {
+    border-radius: 0px 8px 8px 0px;
+    width: 14.37em;
+    background-color: #A02279;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.input-field button:hover,
+.input-field button :active,
+.input-field button :focus,
+.input-field input:hover,
+.input-field input:focus,
+.input-field input:active {
+    outline: none;
+
+}
+
+.image-section {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 100%;
+
+}
+
+.image-section>div {
+    height: 100%;
+    display: flex;
+}
+
+.image-section>div>div {
+    max-width: 14.625em;
+    height: 100%;
+  
+    flex-direction: column;
+    display: flex;
+
+
+}
+
+.sec-1 {
+
+    justify-content: flex-end;
+}
+
+.sec-2 {
+    justify-content: flex-start;
+}
