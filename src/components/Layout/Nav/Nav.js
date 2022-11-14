@@ -1,9 +1,19 @@
-import logo from "../../../assets/logo.png";
+import { useContext } from "react";
+import { store } from "../../../store/contextStore";
+
 import { NavLink } from "react-router-dom";
+
+import logo from "../../../assets/logo.png";
 
 import classes from "./Nav.module.css";
 
 const Nav = (props) => {
+  const ModalCtx = useContext(store);
+
+  const closeModalHandler = () => {
+    ModalCtx.openModal();
+  };
+
   return (
     <nav className={classes.nav}>
       <img src={logo} alt="logo" />
@@ -21,7 +31,7 @@ const Nav = (props) => {
           Community
         </NavLink>
       </ul>
-      <button>Connect wallet</button>
+      <button onClick={closeModalHandler}>Connect wallet</button>
     </nav>
   );
 };

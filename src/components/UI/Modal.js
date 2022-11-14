@@ -1,3 +1,6 @@
+import { useContext } from "react";
+import { store } from "../../store/contextStore";
+
 import classes from "./Modal.module.css";
 
 //imported images
@@ -9,11 +12,16 @@ import Close from "../Icons/Close";
 import OpenMore from "../Icons/OpenMore";
 
 const Modal = (props) => {
+  const Ctx = useContext(store);
+
+  const closeModalHandler = () => {
+    Ctx.closeModal();
+  };
   return (
     <div className={classes.modal}>
       <div>
         <h2>Connect Wallet</h2>
-        <Close />
+        <Close onClose={closeModalHandler} />
       </div>
       <div>
         <p>Choose your preferred wallet</p>

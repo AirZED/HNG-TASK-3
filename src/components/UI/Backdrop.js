@@ -1,5 +1,7 @@
-import { Fragment } from "react";
+import { Fragment, useContext } from "react";
+
 import ReactDOM from "react-dom";
+import { store } from "../../store/contextStore";
 
 import classes from "./Backdrop.module.css";
 
@@ -7,7 +9,14 @@ import classes from "./Backdrop.module.css";
 import Modal from "./Modal";
 
 const Backdrop = (props) => {
-  return <div className={classes.backdrop}></div>;
+  //Initailizing context
+  const Ctx = useContext(store);
+
+  //close modal function
+  const closeModalHandler = () => {
+    Ctx.closeModal();
+  };
+  return <div className={classes.backdrop} onClick={closeModalHandler}></div>;
 };
 
 const Portaler = () => {
