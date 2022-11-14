@@ -1,5 +1,9 @@
 import classes from "./Modal.module.css";
 
+//imported images
+import Metamask from "../../assets/modal-assets/image 66.png";
+import walletConnet from "../../assets/modal-assets/image 69.png";
+
 //imported components
 import Close from "../Icons/Close";
 import OpenMore from "../Icons/OpenMore";
@@ -15,11 +19,16 @@ const Modal = (props) => {
         <p>Choose your preferred wallet</p>
         <ul className={classes.list}>
           <li>
-            <div>MetaMusk</div>
+            <div>
+              <img src={Metamask} alt="Metamask" /> Metamask
+            </div>
             <OpenMore />
           </li>
           <li>
-            <div>MetaMusk</div>
+            <div>
+              <img src={walletConnet} alt="walletconnect" />
+              WalletConnect
+            </div>
             <OpenMore />
           </li>
         </ul>

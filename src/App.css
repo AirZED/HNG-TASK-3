@@ -15,5 +15,7 @@ body.hide {
 
 .App {
   position: relative;
+  height: auto;
 
 }
+

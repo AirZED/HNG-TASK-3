@@ -13,6 +13,10 @@ import image10 from "../assets/display-assets/Frame 151 (10).png";
 import image11 from "../assets/display-assets/Frame 151 (11).png";
 import image12 from "../assets/display-assets/Frame 151 (12).png";
 import image13 from "../assets/display-assets/Frame 151 (13).png";
+import image14 from "../assets/display-assets/Frame 151.png";
+import image15 from "../assets/display-assets/Frame 151 (16).png";
+
+import image17 from "../assets/display-assets/Frame 151 (18).png";
 
 export const Images = [
   {
@@ -69,7 +73,7 @@ export const Images = [
     location: "2345km away",
     description: "Available for two weeks stay",
     usage: "1MBT per night",
-    star: 5,
+    star: 4,
   },
   {
     img: image8,
@@ -118,5 +122,30 @@ export const Images = [
     description: "Available for two weeks stay",
     usage: "1MBT per night",
     star: 5,
+  },
+  {
+    img: image14,
+    name: "DESERT KING",
+    location: "2345km away",
+    description: "Available for two weeks stay",
+    usage: "1MBT per night",
+    star: 3,
+  },
+  {
+    img: image15,
+    name: "DESERT KING",
+    location: "2345km away",
+    description: "Available for two weeks stay",
+    usage: "1MBT per night",
+    star: 3,
+  },
+
+  {
+    img: image17,
+    name: "DESERT KING",
+    location: "2345km away",
+    description: "Available for two weeks stay",
+    usage: "1MBT per night",
+    star: 3,
   },
 ];

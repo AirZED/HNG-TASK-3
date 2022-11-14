@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
       <Layout>
-        <Backdrop />
+        {/*<Backdrop />*/}
         <Switch>
           <Route path="/Air BnB">
             <AirBnb />

@@ -1,14 +1,13 @@
 import { Fragment } from "react";
+import MiniNav from "../components/UI/MiniNav";
 
-//imported components
-import Home from "../components/Home/Home";
-import Adventure from "../components/Adventure/Adventure";
+import NFTs from "../NFTs/NFTs";
 
 const PlaceToStay = (props) => {
   return (
     <Fragment>
-      <Home />
-      <Adventure />
+      <MiniNav />
+      <NFTs />
     </Fragment>
   );
 };

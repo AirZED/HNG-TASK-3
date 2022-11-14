@@ -5,7 +5,7 @@ import { Images } from "../Images";
 import Card from "../Card/Card";
 
 const Adventure = (props) => {
-  const displayedImages = Images.map((each, id) => (
+  const displayedImages = Images.slice(0, 8).map((each, id) => (
     <Card each={each} key={id} />
   ));
   return (

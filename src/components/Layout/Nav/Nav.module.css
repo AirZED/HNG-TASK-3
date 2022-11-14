@@ -52,3 +52,9 @@ nav ul .active {
     color: #A02279;
 
 }
+
+@media (max-width:768px){
+    nav img{
+        width: 6em;
+    }
+}
