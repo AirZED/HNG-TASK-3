@@ -1,6 +1,6 @@
 import { useContext } from "react";
 
-import { Route, Switch } from "react-router-dom";
+import { Redirect, Route, Switch } from "react-router-dom";
 import "./App.css";
 
 //imported store
@@ -21,6 +21,9 @@ function App() {
       <Layout>
         {Ctx.isVisible && <Backdrop />}
         <Switch>
+          <Redirect path="/" exact>
+            <AirBnb />
+          </Redirect>
           <Route path="/Air BnB">
             <AirBnb />
           </Route>
