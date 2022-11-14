@@ -1,8 +1,11 @@
+import { useState } from "react";
+
 import { Route, Switch } from "react-router-dom";
 import "./App.css";
 
 //imported components
 import Layout from "./components/Layout/Layout";
+import Backdrop from "./components/UI/Backdrop";
 
 //imported pages
 import PlaceToStay from "./pages/PlaceToStay";
@@ -12,6 +15,7 @@ function App() {
   return (
     <div className="App">
       <Layout>
+        <Backdrop />
         <Switch>
           <Route path="/Air BnB">
             <AirBnb />

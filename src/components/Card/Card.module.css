@@ -1,6 +1,21 @@
 .card {
-    width: 12em;
+    width: 18.25em;
     height: 23.25em;
+    border: 1px solid #D7D7D7;
+    border-radius: 15px;
+    padding: 1em;
+}
+
+.card p {
+    font-size: 0.75em;
+    font-weight: 400;
+    margin: 0;
+}
+
+.card h2 {
+    font-size: 0.75em;
+    font-weight: 700;
+    margin: 0;
 }
 
 .card img {
@@ -11,5 +26,21 @@
 .card .card-info {
     display: flex;
     flex-direction: column;
+    gap: 0.625em;
+    margin-top: 1em;
 }
 
+.card-info>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.card-info>ul {
+    display: flex;
+    gap: 8px;
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}

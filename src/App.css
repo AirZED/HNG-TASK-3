@@ -1,14 +1,19 @@
 * {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Red Rose', 'cursive';
   box-sizing: border-box;
 }
 
 body {
   padding: 0;
   margin: 0;
+
+}
+
+body.hide {
+  overflow: hidden;
 }
 
 .App {
   position: relative;
-  
+
 }

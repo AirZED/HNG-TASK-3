@@ -1,4 +1,25 @@
 .adventure {
     height: 60.18em;
     width: 100%;
+     padding: 0em 6.25em;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+
+}
+
+
+.adventure h2 {
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.adventure main{
+    display: flex;
+    gap: 1.5em;
+    flex-wrap: wrap;
+    margin: auto;
+    align-items: center;
+    justify-content: space-evenly;
 }
