@@ -21,8 +21,9 @@ function App() {
       <Layout>
         {Ctx.isVisible && <Backdrop />}
         <Switch>
-          <Redirect path="/" to={"/Air BnB"} exact />
-
+          <Route path={"/"} exact>
+            <Redirect to="/Air BnB" />
+          </Route>
           <Route path="/Air BnB">
             <AirBnb />
           </Route>
