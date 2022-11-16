@@ -86,13 +86,14 @@
 @media (max-width:1200px) {
     .home-nfts {
         height: auto;
-        padding: 1em;
+        padding: 2em 1em;
         flex-direction: column;
     }
 
     .home-nfts h1 {
 
         font-size: 2em;
+        margin: 0px;
 
     }
 
@@ -104,4 +105,8 @@
     .non-mobile {
         display: none;
     }
+    .home-nfts section:first-child {
+        gap: 1em;
+    }
+
 }
