@@ -61,9 +61,10 @@ nav ul .active {
 
     .nav {
         display: flex;
+        height: 5em;
         justify-content: space-between;
         background-color: #A02279;
-        padding: .8em;
+        padding: .5em;
     }
 
     .searchEl {
@@ -191,7 +192,7 @@ nav ul .active {
 
 @media (max-width:500px) {
     .nav *{
-        zoom:93%
+        zoom:85%
     }
     
 }
