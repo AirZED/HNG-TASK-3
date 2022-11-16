@@ -190,8 +190,8 @@ nav ul .active {
 }
 
 @media (max-width:500px) {
-    *{
-        zoom:97%
+    .nav *{
+        zoom:93%
     }
     
 }
