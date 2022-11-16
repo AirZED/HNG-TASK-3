@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { store } from "../../../store/contextStore";
 
 import { BiMenu } from "react-icons/bi";
@@ -12,6 +12,7 @@ import classes from "./Nav.module.css";
 const Nav = (props) => {
   const [showNav, setShowNav] = useState(false);
   const [showSearch, setShowSearch] = useState(false);
+
   const ModalCtx = useContext(store);
 
   const closeModalHandler = () => {
@@ -23,9 +24,9 @@ const Nav = (props) => {
     setShowSearch(false);
   };
 
-  const handleOpenNav = (e) => {
+  const handleCloseNav = (e) => {
     if (e.target.tagName === "A") {
-      setShowNav((prev) => !prev);
+      setShowNav((prev) => false);
       setShowSearch(false);
     }
   };
@@ -34,6 +35,8 @@ const Nav = (props) => {
     setShowSearch((prev) => !prev);
     setShowNav(false);
   };
+
+  const navClassName = showNav ? classes.hidden : "";
 
   const SearchEl = () => {
     return (
@@ -53,22 +56,21 @@ const Nav = (props) => {
       </div>
       <img src={logo} alt="logo" className={classes["non-mobile"]} />
 
-      {showNav && (
-        <ul onClick={handleOpenNav}>
-          <NavLink activeClassName={classes.active} to="/Air BnB">
-            Home
-          </NavLink>
-          <NavLink activeClassName={classes.active} to="/place to stay">
-            Place to Stay
-          </NavLink>
-          <NavLink activeClassName={classes.active} to="#">
-            NFTs
-          </NavLink>
-          <NavLink activeClassName={classes.active} to="#">
-            Community
-          </NavLink>
-        </ul>
-      )}
+      <ul onClick={handleCloseNav} className={navClassName}>
+        <NavLink activeClassName={classes.active} to="/Air BnB">
+          Home
+        </NavLink>
+        <NavLink activeClassName={classes.active} to="/place to stay">
+          Place to Stay
+        </NavLink>
+        <NavLink activeClassName={classes.active} to="#">
+          NFTs
+        </NavLink>
+        <NavLink activeClassName={classes.active} to="#">
+          Community
+        </NavLink>
+      </ul>
+
       <div className={classes.actions}>
         <button onClick={closeModalHandler}>Connect wallet</button>
         <div
