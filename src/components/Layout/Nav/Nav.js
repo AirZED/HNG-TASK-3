@@ -21,13 +21,11 @@ const Nav = (props) => {
     setShowNav((prev) => !prev);
   };
 
-  const handleOpenNav = (e) =>
-  {
-    console.log(e.target.tagName)
+  const handleOpenNav = (e) => {
     if (e.target.tagName === "A") {
       setShowNav((prev) => !prev);
     }
-  }
+  };
 
   return (
     <nav className={classes.nav}>
@@ -45,10 +43,10 @@ const Nav = (props) => {
           <NavLink activeClassName={classes.active} to="/place to stay">
             Place to Stay
           </NavLink>
-          <NavLink activeClassName={classes.active} to="/nfts">
+          <NavLink activeClassName={classes.active} to="#">
             NFTs
           </NavLink>
-          <NavLink activeClassName={classes.active} to="/community">
+          <NavLink activeClassName={classes.active} to="#">
             Community
           </NavLink>
         </ul>

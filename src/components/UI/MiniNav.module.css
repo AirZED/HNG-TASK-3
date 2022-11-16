@@ -7,7 +7,6 @@
     justify-content: center;
     margin-bottom: 4em;
 
-
 }
 
 .mini-nav button {
@@ -25,10 +24,13 @@
 }
 
 .mini-nav>ul {
+
     display: flex;
     list-style-type: none;
     margin: 0;
     gap: 3em;
+    padding: 0;
+
 
 }
 
@@ -36,4 +38,31 @@
 .mini-nav>ul>li {
     font-weight: 400;
     font-size: 20px;
+}
+
+@media (max-width:1200px) {
+
+    .mini-nav {
+        height: auto;
+        flex-direction: column;
+        gap: .5em;
+     
+        align-items: flex-start;
+        padding:1em;
+
+
+    }
+
+    .mini-nav>ul {
+        width: 100%;
+        gap: 1em;
+        flex-wrap: wrap;
+
+    }
+
+    .mini-nav button {
+
+        margin-left: 0px
+    }
+
 }
