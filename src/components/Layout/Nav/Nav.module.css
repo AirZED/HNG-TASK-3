@@ -70,10 +70,9 @@ nav ul .active {
         position: absolute;
         top: 100%;
         height: 3em;
-      
-        right: 1px;
-        left: 1px;
-
+        right: 0px;
+        left: 0px;
+        background-color:#A02279;
         margin: auto;
         display: flex;
         align-items: center;
