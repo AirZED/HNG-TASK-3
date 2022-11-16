@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 
 import { Redirect, Route, Switch } from "react-router-dom";
 import "./App.css";
@@ -16,6 +16,14 @@ import AirBnb from "./pages/AirBnb";
 
 function App() {
   const Ctx = useContext(store);
+
+  useEffect(() => {
+    if (Ctx.isVisible) {
+      document.body.classList.add("hidden");
+    } else {
+      document.body.classList.remove("hidden");
+    }
+  }, [Ctx.isVisible]);
 
   return (
     <div className={"App"}>
