@@ -61,7 +61,7 @@ nav ul .active {
 
     .nav {
         display: flex;
-        height: 5em;
+        height: 4.5em;
         justify-content: space-between;
         background-color: #A02279;
         padding: .5em;
