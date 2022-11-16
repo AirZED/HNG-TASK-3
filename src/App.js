@@ -16,8 +16,9 @@ import AirBnb from "./pages/AirBnb";
 
 function App() {
   const Ctx = useContext(store);
+
   return (
-    <div className="App">
+    <div className={"App"}>
       <Layout>
         {Ctx.isVisible && <Backdrop />}
         <Switch>

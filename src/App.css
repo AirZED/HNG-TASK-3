@@ -11,16 +11,16 @@ body {
 
 }
 
-body.hide {
+body.hidden {
   overflow: hidden;
 }
 
 .App {
   position: relative;
   height: auto;
- 
-
 }
+
+
 
 
 @media (max-width:768px) {
