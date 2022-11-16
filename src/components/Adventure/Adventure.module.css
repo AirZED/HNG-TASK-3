@@ -24,3 +24,14 @@
     justify-content: space-evenly;
     margin-bottom: 3em;
 }
+
+@media (max-width:768px) {
+    .adventure {
+      padding: 0 1em;
+
+    }
+    .adventure>h2 {
+        font-size: 1.5em;
+
+    }
+}

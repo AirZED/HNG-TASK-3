@@ -5,6 +5,11 @@ import openSea from "../../assets/opensea.png";
 import metaMusk from "../../assets/metamask.png";
 import mbToken from "../../assets/mbtoken.png";
 
+//mobile Icons
+import opSea from "../../assets/mobile-icons/Group 59537.png";
+import meta from "../../assets/mobile-icons/Group 4038.png";
+import mbT from "../../assets/mobile-icons/Group 59539.png";
+
 //home images
 import image1 from "../../assets/home-assets/image 3.png";
 import image2 from "../../assets/home-assets/image 4.png";
@@ -19,14 +24,14 @@ const Home = () => {
           <h1>
             Rent a <span className={classes.highlight}>Place</span> away from{" "}
             <span className={classes.highlight}>Home</span> in the
-            <span className={classes.highlight}>Metaverse</span>
+            <span className={classes.highlight}> Metaverse</span>
           </h1>
           <p>
             we provide you access to luxury and affordable houses in the
             metaverse, get a chance to turn your imagination to reality at your
             comfort zone
           </p>
-          <div className={classes["input-field"]}>
+          <div className={`${classes["input-field"]} ${classes["non-mobile"]}`}>
             <input placeholder="Search for location" />
             <button>Search</button>
           </div>
@@ -44,10 +49,15 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <footer>
-        <img src={mbToken} alt="mbtoken" />
-        <img src={metaMusk} alt="mbtoken" />
-        <img src={openSea} alt="mbtoken" />
+      <footer className={classes.mobile}>
+        <img src={mbT} alt="MbTokan" />
+        <img src={meta} alt="Metamask" />
+        <img src={opSea} alt="Open Sea" />
+      </footer>
+      <footer className={classes["non-mobile"]}>
+        <img src={mbToken} alt="MbTokan" />
+        <img src={metaMusk} alt="Metamask" />
+        <img src={openSea} alt="Open Sea" />
       </footer>
     </div>
   );

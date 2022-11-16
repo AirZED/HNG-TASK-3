@@ -1,9 +1,9 @@
 .footer {
-    height: 20.125em;
+    height: auto;
     width: 100%;
     background: #1D1D1E;
     display: flex;
-    padding: 0em 6.25em;
+    padding: 1em 6.25em;
     align-items: center;
     justify-content: flex-start;
     gap: 11.68em;
@@ -56,3 +56,5 @@
     font-weight: 700;
     margin-bottom: 5px;
 }
+
+@media (max-width:1200px) {}

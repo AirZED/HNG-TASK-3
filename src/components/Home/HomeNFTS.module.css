@@ -1,12 +1,12 @@
 .home-nfts {
-    height: 48.3753em;
+    height: auto;
     width: 100%;
     background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
     display: flex;
     align-items: center;
     gap: 7.6em;
-    padding: 0em 6.25em;
-   
+    padding: 68px 6.25em;
+
 }
 
 .home-nfts section:first-child {
@@ -15,7 +15,7 @@
     margin: 0;
     flex-direction: column;
     justify-content: flex-start;
-   
+
 }
 
 .home-nfts h1 {
@@ -53,11 +53,11 @@
 .home-nfts section:nth-child(2) {
     width: 50%;
     position: relative;
-   
+
     width: 44em;
     height: 33.925em;
-   
-    
+
+
 }
 
 .home-nfts section:nth-child(2) img {
@@ -71,12 +71,36 @@
 }
 
 .img2 {
-   
-   left: 0;
+
+    left: 0;
     bottom: 0.81em;
 }
 
 .img3 {
-  bottom: 0;
-  right: 0;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+@media (max-width:800px) {
+    .home-nfts {
+        height: auto;
+        padding: 1em;
+        flex-direction: column;
+    }
+
+    .home-nfts h1 {
+
+        font-size: 2em;
+
+    }
+
+    .home-nfts p {
+        font-size: 14px;
+    }
+
+    .non-mobile {
+        display: none;
+    }
 }

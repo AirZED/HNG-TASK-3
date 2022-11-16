@@ -6,6 +6,8 @@
 body {
   padding: 0;
   margin: 0;
+  width: 100%;
+  overflow-x: hidden;
 
 }
 
@@ -16,6 +18,11 @@ body.hide {
 .App {
   position: relative;
   height: auto;
+ 
 
 }
 
+
+@media (max-width:768px) {
+ 
+}

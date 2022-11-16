@@ -44,3 +44,13 @@
     list-style-type: none;
     margin: 0;
 }
+
+@media (max-width:678px) {
+    .card {
+        width: 18.25em;
+        height: 23.25em;
+        border: 1px solid #D7D7D7;
+        border-radius: 15px;
+        padding: 1em;
+    }
+}
