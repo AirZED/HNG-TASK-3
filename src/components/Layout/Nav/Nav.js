@@ -36,7 +36,7 @@ const Nav = (props) => {
     setShowNav(false);
   };
 
-  const navClassName = showNav ? classes.hidden : "";
+  const navClassName = !showNav ? classes.hidden : "";
 
   const SearchEl = () => {
     return (
