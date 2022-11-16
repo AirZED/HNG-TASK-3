@@ -15,3 +15,10 @@
     justify-content: space-evenly;
     margin-bottom: 2em;
 }
+
+@media (max-width:1200px) {
+    .nfts {
+        padding: 0em 1em;
+
+    }
+}

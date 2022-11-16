@@ -11,6 +11,7 @@ import classes from "./Nav.module.css";
 
 const Nav = (props) => {
   const [showNav, setShowNav] = useState(false);
+  const [showSearch, setShowSearch] = useState(false);
   const ModalCtx = useContext(store);
 
   const closeModalHandler = () => {
@@ -19,16 +20,33 @@ const Nav = (props) => {
 
   const toggleNav = () => {
     setShowNav((prev) => !prev);
+    setShowSearch(false);
   };
 
   const handleOpenNav = (e) => {
     if (e.target.tagName === "A") {
       setShowNav((prev) => !prev);
+      setShowSearch(false);
     }
+  };
+
+  const showSearchEl = () => {
+    setShowSearch((prev) => !prev);
+    setShowNav(false);
+  };
+
+  const SearchEl = () => {
+    return (
+      <div className={classes.searchEl}>
+        <input placeholder="Search for location" />
+        <button onClick={showSearchEl}>Search</button>
+      </div>
+    );
   };
 
   return (
     <nav className={classes.nav}>
+      {showSearch && <SearchEl />}
       <div className={classes.mobile}>
         <BiMenu onClick={toggleNav} />
         <img src={mobileLogo} alt="mobile Logo" className={classes.logo} />
@@ -53,7 +71,10 @@ const Nav = (props) => {
       )}
       <div className={classes.actions}>
         <button onClick={closeModalHandler}>Connect wallet</button>
-        <div className={`${classes.mobile} ${classes.search}`}>
+        <div
+          className={`${classes.mobile} ${classes.search}`}
+          onClick={showSearchEl}
+        >
           <BsSearch />
         </div>
       </div>
