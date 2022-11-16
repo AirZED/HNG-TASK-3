@@ -63,10 +63,10 @@ const Nav = (props) => {
         <NavLink activeClassName={classes.active} to="/place to stay">
           Place to Stay
         </NavLink>
-        <NavLink activeClassName={classes.active} to="#">
+        <NavLink activeClassName={classes.active} to="/nfts">
           NFTs
         </NavLink>
-        <NavLink activeClassName={classes.active} to="#">
+        <NavLink activeClassName={classes.active} to="/community">
           Community
         </NavLink>
       </ul>

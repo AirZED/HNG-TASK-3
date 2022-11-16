@@ -4,12 +4,24 @@
     border: 1px solid #D7D7D7;
     border-radius: 15px;
     padding: 1em;
+    position: relative;
 }
 
 .card p {
     font-size: 0.75em;
     font-weight: 400;
     margin: 0;
+}
+
+.card .heart {
+    position: absolute;
+    right: 1.4em;
+    top: 1.5em;
+}
+.card .heart:hover{
+   fill: #2e1727;
+   cursor: pointer;
+    
 }
 
 .card h2 {
